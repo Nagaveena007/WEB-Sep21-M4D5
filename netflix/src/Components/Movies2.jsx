@@ -12,7 +12,7 @@ class GetMovies3ndrow extends Component {
   fetchMovies = async () => {
     try {
       let response = await fetch(
-        "http://www.omdbapi.com/?apikey=d87edd3&s=harry%20potter",
+        "http://www.omdbapi.com/?apikey=d87edd3&s=lord%20of%20the%20ring",
         {
           method: "GET",
         }
