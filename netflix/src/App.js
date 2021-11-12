@@ -6,6 +6,7 @@ import GetMovies2ndrow from "./Components/Movies";
 import GetMovies3ndrow from "./Components/Movies2";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
       <GetMovies />
       <GetMovies2ndrow />
       <GetMovies3ndrow />
+      <Footer />
     </div>
   );
 }
