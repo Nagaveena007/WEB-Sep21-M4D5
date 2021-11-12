@@ -17,7 +17,8 @@ function App() {
       <GetMovies />
       <GetMovies2ndrow />
       <GetMovies3ndrow />
-      <Footer />
+      {/*       <Footer />
+       */}{" "}
     </div>
   );
 }
