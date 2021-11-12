@@ -32,7 +32,7 @@ class GetMovies3ndrow extends Component {
   render() {
     return (
       <section className="shows section-center">
-        <h3 className="shows-title">Comming Soon</h3>
+        <h3 className="shows-title">lord of the rings</h3>
         <div className="shows-imgs" id="romantic">
           {this.state.movies.map((m) => (
             <img

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = (props) => (
+const Footer = () => (
   <div className="main-footer">
     <div className="foot-div1">
       <ul className="foot-ul1">

@@ -2,7 +2,7 @@ import image from "../Data/Netflix_Logo_RGB.png";
 import avatar from "../Data/avatar.png";
 import lens from "../Data/lens.svg";
 import bell from "../Data/bell-solid.svg";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, FormControl } from "react-bootstrap";
 const MyNavbar = () => (
   <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: "black" }}>
     <img src={image} width="100px" height="40px" alt="" />
@@ -28,6 +28,8 @@ const MyNavbar = () => (
       <Nav>
         <div className="container mr-1">
           <img src={lens} width="30px" height="20px" alt="" />
+          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+
           <Nav.Link
             href="#features"
             style={{ color: "white", marginRight: "5px" }}

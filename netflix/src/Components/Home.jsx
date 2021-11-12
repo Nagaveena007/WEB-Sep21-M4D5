@@ -8,7 +8,6 @@ class GetMovies extends Component {
   componentDidMount = () => {
     console.log("componentDidMount");
     this.fetchMovies();
-    // this.fetch2ndrowMovies();
   };
 
   fetchMovies = async () => {
@@ -32,31 +31,10 @@ class GetMovies extends Component {
     }
   };
 
-  /*   fetch2ndrowMovies = async () => {
-    try {
-      let response = await fetch(
-        "http://www.omdbapi.com/?apikey=d87edd3&t=lord+of+the+rings",
-        {
-          method: "GET",
-        }
-      );
-      console.log(response);
-      if (response.ok) {
-        let data1 = await response.json();
-        console.log(data1);
-        this.setState({
-          movies: data1.Search,
-        });
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
- */
   render() {
     return (
       <section className="shows section-center">
-        <h3 className="shows-title">Popular Now</h3>
+        <h3 className="shows-title">Harry Potter</h3>
         <div className="shows-imgs" id="romantic">
           {this.state.movies.map((m) => (
             <img
