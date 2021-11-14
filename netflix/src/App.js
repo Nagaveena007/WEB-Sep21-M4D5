@@ -7,17 +7,19 @@ import GetMovies3ndrow from "./Components/Movies2";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import FooterSection from "./Components/FooterSection";
 function App() {
   return (
     <div className="App">
-      <MyNavbar />
-      {/*       <Navbar />
-       */}
+      {/*  <MyNavbar /> */}
+      <Navbar />
       <Header />
       <GetMovies />
       <GetMovies2ndrow />
       <GetMovies3ndrow />
-      <Footer />
+      <FooterSection />
+      {/*       <Footer />
+       */}{" "}
     </div>
   );
 }

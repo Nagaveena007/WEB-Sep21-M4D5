@@ -38,7 +38,7 @@ class GetMovies extends Component {
         <div className="shows-imgs" id="romantic">
           {this.state.movies.map((m) => (
             <img
-              className="img-fluid section-img mb-3"
+              className="img-fluid section-img mb-3 "
               key={m.imdbID}
               src={m.Poster}
             />

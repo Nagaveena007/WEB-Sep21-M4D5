@@ -2,9 +2,12 @@ import image from "../Data/Netflix_Logo_RGB.png";
 import avatar from "../Data/avatar.png";
 import lens from "../Data/lens.svg";
 import bell from "../Data/bell-solid.svg";
+import { Form, FormControl } from "react-bootstrap";
+import { FaBell } from "react-icons/fa";
+import { MdArrowDropDown } from "react-icons/md";
 const Navbar = () => {
   return (
-    <div className="container-fluid navt">
+    <div className="container-fluid">
       <nav className="navbar navbar-expand-lg nav-center">
         <a className="navbar-brand" href="#">
           <img src={image} className="nav-logo-img" alt="netflix logo" />
@@ -52,14 +55,22 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-
+          <Form className="d-flex">
+            <FormControl
+              type="search"
+              placeholder="Search"
+              className="mr-2"
+              aria-label="Search"
+              onChange={(e) => this.setState({ searchQuery: e.target.value })}
+            />
+          </Form>
           <i className="fas fa-search"></i>
           <a className="nav-link" href="#">
             KIDS
           </a>
-          <i className="fas fa-bell"></i>
+          <FaBell />{" "}
           <img src={avatar} className="nav-avatar" alt="nav-avatar" />
-          <i className="fas fa-caret-down"></i>
+          <MdArrowDropDown className="nav-dropdown" />{" "}
         </div>
       </nav>
     </div>
