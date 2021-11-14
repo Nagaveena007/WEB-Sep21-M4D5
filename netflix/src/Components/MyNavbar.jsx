@@ -28,8 +28,8 @@ const MyNavbar = () => (
       <Nav>
         <div className="container mr-1">
           <img src={lens} width="30px" height="20px" alt="" />
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-
+          {/*           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+           */}
           <Nav.Link
             href="#features"
             style={{ color: "white", marginRight: "5px" }}
